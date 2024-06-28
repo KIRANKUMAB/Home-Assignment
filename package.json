@@ -1,0 +1,22 @@
+{
+  "name": "nomo_assignment",
+  "version": "1.0.0",
+  "description": "login validations",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f @cucumber/pretty-formatter --format html:report/cucumber_report.html feature"
+  },
+  "keywords": [],
+  "author": "kiran kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "appium-uiautomator2-driver": "^3.6.1",
+    "appium-xcuitest-driver": "^7.20.0"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "appium": "^2.10.3",
+    "webdriverio": "^8.39.0"
+  }
+}
