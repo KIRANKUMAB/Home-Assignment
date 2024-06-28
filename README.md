@@ -1,4 +1,4 @@
-# Nomo-Assignment
+# Home-Assignment
 Mobile automation of android application using JavaScript, WebDriver IO and Appium.
 
 Basic Test for Mobile Automation using Cucumber and Appium with WebDriver IO and JavaScript as programming language and Visual Studio Code as IDE
