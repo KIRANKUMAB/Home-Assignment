@@ -5,10 +5,15 @@ Feature: Launch app and validate user credential
     When Standard Login - click on profile tab
     When Standard Login - click on sign in
     When Standard Login - click on sign in email
-    When Standard Login - Enter username
-    When Standard Login - Enter password
+    When Standard Login - Enter username "<email>"
+    When Standard Login - Enter password "<password>"
     When Standard Login - Clik on the login button
     Then Standard Login - verify dashboard display
+
+    Examples:
+      | email | password |
+      | kirank@demo.com | kiran@2024 |
+
     
   Scenario Outline: No Password user login
     Given No Password Login - lanuch app
