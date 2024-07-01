@@ -36,23 +36,23 @@ When('Standard Login - click on sign in email', { timeout: 2 * 50000 }, async() 
     console.log("click on sign-in email");
 });
 
-When('Standard Login - Enter username', { timeout: 2 * 50000 }, async() => {
+When('Standard Login - Enter username {string}', { timeout: 2 * 50000 }, async(email) => {
     try {
         const username =  await driver.$(locators.email);
         await username.click()
         await username.clearValue();
-        await username.setValue(user.email);
+        await username.setValue(email);
     } catch(err){
             throw err
         }
 });
 
-When('Standard Login - Enter password', { timeout: 2 * 50000 }, async() => {
+When('Standard Login - Enter password {string}', { timeout: 2 * 50000 }, async(password) => {
     try{
-        const password =  await driver.$(locators.password);
-        await password.click()
-        await password.clearValue();
-        await password.setValue(user.pwd);
+        const pwd =  await driver.$(locators.password);
+        await pwd.click()
+        await pwd.clearValue();
+        await pwd.setValue(password);
     }catch(err){
         throw err
     }
