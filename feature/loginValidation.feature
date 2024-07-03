@@ -15,7 +15,7 @@ Feature: Launch app and validate user credential
       | kirank@demo.com | kiran@2024 |
       | kirank@demo.com | kiran@2024 |
     
-  Scenario Outline: No Password user login
+  Scenario: No Password user login
     Given No Password Login - lanuch app
     When No Password Login - click on profile tab
     When No Password Login - click on sign in
@@ -25,7 +25,7 @@ Feature: Launch app and validate user credential
     When No Password Login - Clik on the login button
     Then No Password Login - verify password required validation
 
-  Scenario Outline: No user details login
+  Scenario: No user details login
     Given No User Login - lanuch app
     When No User Login - click on profile tab
     When No User Login - click on sign in
@@ -35,7 +35,7 @@ Feature: Launch app and validate user credential
     When No User Login - Clik on the login button
     Then No User Login - verify username required validation
 
-  Scenario Outline: Invalid - No match user login
+  Scenario: Invalid - No match user login
     Given No match Login - lanuch app
     When No match Login - click on profile tab
     When No match Login - click on sign in
